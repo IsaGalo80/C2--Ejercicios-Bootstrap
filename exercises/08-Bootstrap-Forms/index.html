@@ -12,9 +12,33 @@
 		<title>08 Bootstrap Forms</title>
 	</head>
 	<body>
-		<div class="col-3 mx-auto my-5">
-			<!-- Add your code below this line -->
-			
+		<div class="conatainer-fluid">
+			<div class="row">
+				<div class="col-4 mx-auto my-5">
+					<div class="bg-secondary">
+						<h2>Please login</h2>
+						<!-- Add your code below this line -->
+						<form action="/action_page.php">
+							<div class="mb-3 mt-3 width 60%">
+								<label for="email" class="form-label"></label>
+								<input type="email" class="form-control" id="email" placeholder="Email Address" name="email" />
+							</div>
+							<div class="mb-3">
+								<label for="pwd" class="form-label"></label>
+								<input type="password" class="form-control" id="pwd" placeholder=" Password" name="pswd" />
+							</div>
+							<div class="col-12">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="remember" /> Remember me
+								</label>
+							</div>
+							<div class="width 100%">
+								<button type="submit" class="btn btn-primary">Login</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
